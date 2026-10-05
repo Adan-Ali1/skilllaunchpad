@@ -1,6 +1,6 @@
 # SkillLaunchpad
 
-A static, worldwide beginner resource for digital skills and careful first steps into freelancing. The site includes six original guides, searchable and filterable guide cards, downloadable planning worksheets, an interactive portfolio and freelancing tools, a directory of official learning resources, and About, Contact, and Privacy pages.
+A static, worldwide beginner resource for digital skills and careful first steps into freelancing. The site includes six original guides, searchable and filterable guide cards, downloadable planning worksheets, an interactive portfolio and freelancing tools, a directory of official learning resources, and About, Contact, FAQ, and Privacy pages.
 
 ## Preview locally
 
