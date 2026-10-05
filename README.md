@@ -1,19 +1,23 @@
 # SkillLaunchpad
 
-A static starter website for a worldwide beginner audience. It includes a responsive landing page, four original beginner guides, guide search and category filters, a downloadable first-client planner, and a privacy page.
+A static, worldwide beginner resource for digital skills and careful first steps into freelancing. The site includes six original guides, searchable and filterable guide cards, downloadable planning worksheets, an interactive portfolio brief builder, a directory of official learning resources, and About, Contact, and Privacy pages.
 
-## Preview
-Open index.html in a browser.
+## Preview locally
 
-## Free deployment with Cloudflare Pages
-1. Create a GitHub repository and upload the contents of this folder to its root.
-2. In Cloudflare, select **Workers & Pages → Create application → Pages → Import an existing Git repository**, then connect that repository.
-3. Select **None** for framework preset, set the production branch to **main**, use **exit 0** as the build command, and **.** as the build output directory.
-4. Deploy. Cloudflare will assign a free provider subdomain ending in **pages.dev**, if available.
+Open `index.html` in a browser. The site uses plain HTML, CSS, and JavaScript and does not require package installation or a local build step.
 
-The provider subdomain is not ownership of a custom domain. Free-plan limits and terms can change. Keep a local copy of the source.
+## Cloudflare Pages
 
-## Before launch
-- Review this Privacy page if services or data collection change.
-- The site is informational; it does not promise income, work, or search ranking.
-- Add sitemap/canonical links only after the public site address is known.
+The repository is connected to Cloudflare Pages, so pushes to `main` trigger deployments. The production site is [skilllaunchpad.pages.dev](https://skilllaunchpad.pages.dev/).
+
+For a static Pages project, use the repository root as the root directory, `main` as the production branch, no framework preset, `exit 0` as the build command, and `.` as the build output directory. Cloudflare's setup details and plan limits can change; check the official Pages documentation before changing project settings.
+
+## Site files
+
+- `guides/`: beginner articles
+- `assets/`: downloadable text worksheets
+- `tools/`: browser-based portfolio brief builder
+- `resources.html`: official external learning libraries
+- `robots.txt` and `sitemap.xml`: search crawler discovery
+
+The site is informational. It does not promise income, freelance clients, or search rankings. External providers set their own course, account, language, certificate, and regional-access terms. Keep a separate backup of the repository source.
