@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Create a realistic freelance portfolio practice brief for free. Choose a service and audience, then get a small project to make and explain.">
+<meta name="author" content="SkillLaunchpad Editorial">
+<title>Free Portfolio Brief Builder | SkillLaunchpad</title>
+<link rel="canonical" href="https://skilllaunchpad.pages.dev/tools/portfolio-brief-builder.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SkillLaunchpad"><meta property="og:url" content="https://skilllaunchpad.pages.dev/tools/portfolio-brief-builder.html"><meta property="og:title" content="Free Portfolio Brief Builder | SkillLaunchpad"><meta property="og:description" content="Generate a small, honest practice-project brief for your freelance portfolio."><meta name="twitter:card" content="summary"><meta name="theme-color" content="#f6f8f5">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../styles-extra.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+.builder{max-width:780px;margin:2rem auto 5rem}.builder-intro{font-size:1.1rem;line-height:1.7;color:#53615b}.builder-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:1.5rem;background:#fff;border:1px solid #dce5dd;border-radius:18px;margin:2rem 0}.builder-form label{display:grid;gap:.5rem;font-weight:700}.builder-form select{font:inherit;padding:.8rem;border:1px solid #b8c5bc;border-radius:9px;background:#fff;color:#18251e}.builder-form button{grid-column:1/-1;justify-self:start}.brief-result{background:#f0f6f0;border:1px solid #cbdccb;padding:1.5rem;border-radius:18px;margin:1.5rem 0}.brief-result h2{margin-top:0}.brief-result dt{font-weight:700;margin-top:1rem}.brief-result dd{margin:.25rem 0 0;line-height:1.6}.brief-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.25rem}.brief-note{color:#53615b;font-size:.95rem}.builder-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}@media(max-width:600px){.builder-form{grid-template-columns:1fr}.builder-form button{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="../index.html"><b>S<span>+</span></b> skill<span>launchpad</span></a><nav><a href="../index.html#guides">Guides</a><a href="../index.html#toolkit">Free toolkit</a><a href="../index.html#approach">Our approach</a></nav></header>
+<main class="wrap builder">
+<a class="back" href="../index.html#toolkit">← SkillLaunchpad</a>
+<div class="eyebrow">FREE BEGINNER TOOL · NO SIGNUP</div>
+<h1>Portfolio Brief Builder</h1>
+<p class="builder-intro">Choose one skill and audience to get a small fictional project brief. Make the sample, explain your choices, and label it as practice work. This tool does not promise clients or income; it helps you decide what to create next.</p>
+<form class="builder-form" id="brief-form">
+<label for="service">What do you want to practise?
+<select id="service"><option value="social">Social post design</option><option value="product">Product description writing</option><option value="spreadsheet">Spreadsheet cleanup</option><option value="video">Short video editing</option><option value="landing">Landing-page copy</option></select></label>
+<label for="audience">Who is the practice project for?
+<select id="audience"><option>A fictional neighborhood bakery</option><option>A fictional independent fitness coach</option><option>A fictional community event</option><option>A fictional handmade-goods shop</option><option>A fictional volunteer group</option></select></label>
+<button class="btn" type="submit">Generate a practice brief →</button>
+</form>
+<section class="brief-result" id="result" hidden aria-live="polite">
+<div class="eyebrow">CONCEPT PROJECT · NOT CLIENT WORK</div><h2 id="brief-title">Your practice brief</h2>
+<dl><dt>Situation</dt><dd id="brief-situation"></dd><dt>Your task</dt><dd id="brief-task"></dd><dt>Keep in mind</dt><dd id="brief-limit"></dd><dt>What to explain in your portfolio</dt><dd id="brief-focus"></dd></dl>
+<div class="brief-actions"><button class="btn" type="button" id="copy-brief">Copy brief</button><button class="link" type="button" id="new-brief">Make another</button></div><p class="brief-note" id="copy-status" role="status"></p>
+</section>
+<p class="brief-note">Use fictional names and details. Use only work and assets you created or have permission to share. Never present a practice brief as paid client work.</p>
+<div class="builder-links"><a class="link" href="../guides/first-portfolio-no-experience.html">Read the first portfolio guide →</a><a class="link" href="../assets/portfolio-starter-worksheet.txt" download>Download the free project worksheet ↓</a></div>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="../index.html"><b>S<span>+</span></b> skill<span>launchpad</span></a><span>Practical guides for your next step.</span><a href="../privacy.html">Privacy</a></div><div class="wrap copyright">© 2026 SkillLaunchpad. Learn at your own pace.</div></footer>
+<script>
+const projects={
+ social:{title:'Make one clear social post',situation:'The audience needs to understand one useful update quickly on a phone.',task:'Create one social post and a short caption that make the main detail easy to notice.',limit:'Use fictional names and details. Keep the layout readable at mobile size; use only original or properly licensed visuals.',focus:'Explain how you chose the visual hierarchy, what information you prioritized, and one improvement you would make after feedback.'},
+ product:{title:'Improve a product description',situation:'A small shop has a product listing that describes features but does not clearly answer a buyer’s basic questions.',task:'Write a concise product title and description that state what the item is, who it may suit, and its confirmed features.',limit:'Do not invent materials, certifications, delivery promises, or product claims. Use a fictional item and mark any assumptions.',focus:'Explain how you organized the information and kept each claim grounded in the fictional brief.'},
+ spreadsheet:{title:'Make a sample tracker easier to use',situation:'A volunteer group tracks fictional event tasks in a cluttered spreadsheet with inconsistent labels.',task:'Create a small sample tracker with clear column headings, consistent dates, and a simple status field.',limit:'Use invented names and sample data only. Do not upload real personal details.',focus:'Explain how you improved readability and consistency, and what you would ask the group before changing a real file.'},
+ video:{title:'Edit a short event recap',situation:'A fictional community event needs a short, accessible recap for people who could not attend.',task:'Plan or edit a 20–30 second vertical recap with a clear opening, a few purposeful cuts, and readable captions.',limit:'Use your own footage or assets you have permission to use. Keep captions legible and do not imply a real event took place.',focus:'Explain your pacing, caption choices, and how the edit works with sound off.'},
+ landing:{title:'Write a simple landing-page draft',situation:'A fictional local service has a page that does not clearly say who it helps or what visitors can do next.',task:'Draft a headline, short explanation, three useful details, and one clear next step.',limit:'Do not invent prices, outcomes, reviews, or guarantees. Mark any placeholder details.',focus:'Explain how the draft answers a visitor’s likely first questions and what information still needs confirmation.'}
+};
+const form=document.getElementById('brief-form'),result=document.getElementById('result');
+function generateBrief(){const key=document.getElementById('service').value, audience=document.getElementById('audience').value, item=projects[key];document.getElementById('brief-title').textContent=item.title;document.getElementById('brief-situation').textContent=audience+'. '+item.situation;document.getElementById('brief-task').textContent=item.task;document.getElementById('brief-limit').textContent=item.limit;document.getElementById('brief-focus').textContent=item.focus;document.getElementById('copy-status').textContent='';result.hidden=false;result.scrollIntoView({behavior:'smooth',block:'nearest'});}
+form.addEventListener('submit',event=>{event.preventDefault();generateBrief();});document.getElementById('new-brief').addEventListener('click',generateBrief);document.getElementById('copy-brief').addEventListener('click',async()=>{const text=[document.getElementById('brief-title').textContent,document.getElementById('brief-situation').textContent,document.getElementById('brief-task').textContent,document.getElementById('brief-limit').textContent,document.getElementById('brief-focus').textContent].join('\n\n');try{await navigator.clipboard.writeText(text);document.getElementById('copy-status').textContent='Brief copied.';}catch{document.getElementById('copy-status').textContent='Clipboard access is unavailable in this browser. You can select and copy the text above.';}});
+</script>
+</body></html>
