@@ -1,6 +1,6 @@
 # SkillLaunchpad
 
-A static, worldwide beginner resource for digital skills and careful first steps into freelancing. The site includes six original guides, searchable and filterable guide cards, downloadable planning worksheets, an interactive portfolio brief builder, a directory of official learning resources, and About, Contact, and Privacy pages.
+A static, worldwide beginner resource for digital skills and careful first steps into freelancing. The site includes six original guides, searchable and filterable guide cards, downloadable planning worksheets, an interactive portfolio and freelancing tools, a directory of official learning resources, and About, Contact, and Privacy pages.
 
 ## Preview locally
 
@@ -16,7 +16,8 @@ For a static Pages project, use the repository root as the root directory, `main
 
 - `guides/`: beginner articles
 - `assets/`: downloadable text worksheets
-- `tools/`: browser-based portfolio brief builder
+- `tools.html`: free tool directory
+- `tools/`: browser-based portfolio brief, proposal, and outreach builders
 - `resources.html`: official external learning libraries
 - `robots.txt` and `sitemap.xml`: search crawler discovery
 
