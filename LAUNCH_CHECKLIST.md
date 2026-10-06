@@ -1,6 +1,6 @@
 # SkillLaunchpad: launch and income setup
 
-This is an owner checklist. The public website currently has no ad code, affiliate links, analytics tag, visitor accounts, or paid products enabled.
+This is an owner checklist. The public website has opt-in Google Analytics 4. It has no ad code, affiliate links, visitor accounts, or paid products enabled.
 
 ## Published foundation
 
@@ -27,8 +27,10 @@ Official starting points: [AdSense site readiness](https://support.google.com/ad
 
 ## Traffic measurement
 
-- Search Console can report search queries, impressions, clicks, and indexing. Review it periodically; an indexing request does not guarantee inclusion.
-- A separate analytics product has not been connected because its property/measurement ID belongs to the owner's account. Do not ship a placeholder ID. If GA4 is added, update Privacy first and review consent requirements for the audience locations.
+- Search Console reports search queries, impressions, clicks, and indexing. Review it periodically; an indexing request does not guarantee inclusion.
+- Google Analytics 4 is installed with explicit opt-in: the tag loads only after a visitor accepts, the page includes a Privacy choices control, and analytics cookies are cleared where accessible after rejection.
+- After deployment, the owner should accept analytics on the live site, then check the GA4 Realtime report. New data can take up to 48 hours to show in standard reports.
+- The Privacy page describes analytics. Review any additional privacy/consent duties that apply to the site's audience and location.
 
 ## Accounts and admin
 
