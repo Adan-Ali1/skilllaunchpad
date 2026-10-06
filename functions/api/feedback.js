@@ -5,6 +5,14 @@ function reply(payload, status = 200) {
   return new Response(JSON.stringify(payload), { status, headers: jsonHeaders });
 }
 
+function safeDiagnostic(value, recipient) {
+  return String(value || "Unknown provider error.")
+    .replaceAll(recipient, "[recipient]")
+    .replace(/[\u0000-\u001f<>]/g, " ")
+    .slice(0, 180)
+    .trim();
+}
+
 export async function onRequestPost({ request, env }) {
   const origin = request.headers.get("Origin");
   if (origin && origin !== SITE_ORIGIN) return reply({ error: "Request not allowed." }, 403);
@@ -52,12 +60,14 @@ export async function onRequestPost({ request, env }) {
     });
     const result = await response.json().catch(() => null);
     if (!response.ok || !result || result.success === false || result.success === "false") {
-      console.error("Feedback provider rejected submission", response.status, result?.message || result?.success || "invalid response");
-      return reply({ error: "We couldn't send your message right now. Please try again later." }, 502);
+      const detail = safeDiagnostic(result?.message || result?.success, env.FEEDBACK_TO);
+      console.error("Feedback provider rejected submission", response.status, detail);
+      return reply({ error: `Email provider rejected the request (${response.status}): ${detail}` }, 502);
     }
     return reply({ success: true });
   } catch (error) {
-    console.error("Feedback provider request failed", error instanceof Error ? error.message : "unknown error");
-    return reply({ error: "We couldn't send your message right now. Please try again later." }, 502);
+    const detail = safeDiagnostic(error instanceof Error ? error.message : "Network request failed.", env.FEEDBACK_TO);
+    console.error("Feedback provider request failed", detail);
+    return reply({ error: `Email provider connection failed: ${detail}` }, 502);
   }
 }
