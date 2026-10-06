@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://skilllaunchpad.pages.dev/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://skilllaunchpad.pages.dev/resources.html</loc>
@@ -31,6 +31,18 @@
   <url>
     <loc>https://skilllaunchpad.pages.dev/guides/write-first-freelance-proposal.html</loc>
     <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://skilllaunchpad.pages.dev/guides/write-freelance-profile-with-no-experience.html</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://skilllaunchpad.pages.dev/guides/turn-a-practice-project-into-a-case-study.html</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://skilllaunchpad.pages.dev/guides/plan-a-small-freelance-project.html</loc>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://skilllaunchpad.pages.dev/tools/portfolio-brief-builder.html</loc>
