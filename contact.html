@@ -24,9 +24,9 @@
 .feedback-trap{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
 @media(max-width:600px){.feedback-panel{margin:22px 0}.feedback-form button{width:100%;text-align:center}}
 </style>
-<script defer src="/analytics.js"></script></head>
+<script defer src="/analytics.js"></script><link rel="stylesheet" href="/platform.css"></head>
 <body>
-<header><a class="brand" href="index.html"><img class="brand-logo" src="/assets/skilllaunchpad-logo.svg" alt="SkillLaunchPad"></a><nav><a href="index.html#guides">Guides</a><a href="index.html#toolkit">Free toolkit</a><a href="about.html">About</a><a href="resources.html">Free resources</a><a href="tools.html">Tools</a><a href="faq.html">FAQ</a></nav></header>
+<header><a class="brand" href="index.html"><img class="brand-logo" src="/assets/skilllaunchpad-logo.svg" alt="SkillLaunchPad"></a><button id="platform-menu" aria-label="Open menu" aria-expanded="false">☰</button><nav id="platform-nav"><a href="index.html#guides">Guides</a><a href="index.html#toolkit">Free toolkit</a><a href="about.html">About</a><a href="resources.html">Free resources</a><a href="tools.html">Tools</a><a href="faq.html">FAQ</a></nav><div class="platform-nav-extra"><button id="theme-toggle" aria-label="Change color theme">◐</button><button id="global-search" aria-label="Search the site">⌕ Search</button></div></header>
 <main class="wrap article">
 <a class="back" href="index.html">← Home</a><div class="eyebrow">CONTACT & FEEDBACK</div>
 <h1>Help us improve SkillLaunchpad</h1>
@@ -65,4 +65,4 @@ feedbackForm.addEventListener('submit',async event=>{
   finally{button.disabled=false;}
 });
 </script>
-</body></html>
+<script src="/platform.js"></script></body></html>
