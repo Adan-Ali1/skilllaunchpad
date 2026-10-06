@@ -36,26 +36,28 @@ export async function onRequestPost({ request, env }) {
   const form = {
     name,
     email,
+    _replyto: email,
     topic,
     message,
     _subject: `SkillLaunchpad feedback: ${topic}`,
-    _template: "table"
+    _template: "table",
+    _url: `${SITE_ORIGIN}/contact.html`
   };
 
   try {
-    const body = new URLSearchParams();
-    for (const [key, value] of Object.entries(form)) body.set(key, value);
     const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(env.FEEDBACK_TO)}`, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json" },
-      body
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(form)
     });
     const result = await response.json().catch(() => null);
     if (!response.ok || !result || result.success === false || result.success === "false") {
+      console.error("Feedback provider rejected submission", response.status, result?.message || result?.success || "invalid response");
       return reply({ error: "We couldn't send your message right now. Please try again later." }, 502);
     }
     return reply({ success: true });
-  } catch {
+  } catch (error) {
+    console.error("Feedback provider request failed", error instanceof Error ? error.message : "unknown error");
     return reply({ error: "We couldn't send your message right now. Please try again later." }, 502);
   }
 }
