@@ -23,7 +23,6 @@ export async function onRequestPost({ request, env }) {
     return reply({ error: "Please check the form and try again." }, 400);
   }
 
-  // Quietly accept the request if the hidden anti-spam field was filled by a bot.
   if (String(fields._honey || "").trim()) return reply({ success: true });
 
   const name = String(fields.name || "").trim().slice(0, 100);
@@ -44,10 +43,12 @@ export async function onRequestPost({ request, env }) {
   };
 
   try {
+    const body = new URLSearchParams();
+    for (const [key, value] of Object.entries(form)) body.set(key, value);
     const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(env.FEEDBACK_TO)}`, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify(form)
+      headers: { "Content-Type": "application/x-www-form-urlencoded", Accept: "application/json" },
+      body
     });
     const result = await response.json().catch(() => null);
     if (!response.ok || !result || result.success === false || result.success === "false") {
