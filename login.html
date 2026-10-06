@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Admin sign in | SkillLaunchpad</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-extra.css">
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth-config.js"></script>
+  <script type="module" src="auth-ui.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/"><b>S<span>+</span></b> skill<span>launchpad</span></a><nav><a href="/">Public site</a></nav></header>
+  <main class="wrap auth-page admin-login-page">
+    <div class="eyebrow">OWNER ACCESS</div><h1>Admin sign in</h1>
+    <p class="sub">This sign-in is only for the site owner. Visitors can continue to use the public tools without an account.</p>
+    <p class="auth-status" data-auth-status role="status" aria-live="polite">Checking administrator login setup…</p>
+    <form class="auth-form" id="login-form">
+      <label>Owner email<input name="email" type="email" autocomplete="username" required></label>
+      <label>Password<input name="password" type="password" autocomplete="current-password" minlength="8" required></label>
+      <button class="btn" type="submit">Sign in to admin</button>
+    </form>
+    <div class="auth-links"><a href="/reset-password.html">Forgot admin password?</a></div>
+  </main>
+  <footer><div class="wrap foot"><a href="/">Public site</a><a href="/privacy.html">Privacy</a></div></footer>
+</body>
+</html>
