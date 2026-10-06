@@ -78,6 +78,8 @@ footer{background:#fbfdfb}.foot{color:#536b61}.copyright{color:#809187}
 .sl-consent-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.sl-consent-actions button,.sl-consent-trigger{font:600 13px "DM Sans",Arial,sans-serif;border:1px solid #b8ccc0;border-radius:999px;padding:10px 15px;background:white;color:#23483f;cursor:pointer}.sl-consent-actions [data-sl-accept]{background:#16745d;border-color:#16745d;color:#fff}.sl-consent-actions button:focus-visible,.sl-consent-trigger:focus-visible{outline:3px solid #e47857;outline-offset:2px}.sl-consent-trigger{position:fixed;right:18px;bottom:16px;z-index:999;background:#fff;box-shadow:0 5px 18px #183b3a20}
 @media(max-width:520px){.sl-consent{right:10px;bottom:62px;padding:16px}.sl-consent-actions button{flex:1}.sl-consent-trigger{right:12px;bottom:12px}}
 
-/* SkillLaunchpad mark: a learning book with an upward launch path. */
-.brand>b{display:block;flex:0 0 40px;width:40px;height:40px;padding:0;background:transparent url("/assets/skilllaunchpad-mark.svg") center/contain no-repeat;border-radius:0;box-shadow:none;color:transparent;font-size:0;line-height:0}
-.brand>b span{display:none}
+
+
+/* Reference-inspired SkillLaunchPad rocket wordmark. */
+.brand-logo{display:block;width:218px;max-width:100%;height:auto;object-fit:contain}
+.admin-brand .brand-logo{width:184px}

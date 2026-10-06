@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">SkillLaunchPad — Learn, Build, Grow</title>
+  <defs>
+    <radialGradient id="back" cx="50%" cy="40%" r="75%"><stop stop-color="#091a48"/><stop offset=".7" stop-color="#030a20"/><stop offset="1" stop-color="#010510"/></radialGradient>
+    <linearGradient id="blue" x1="35" y1="35" x2="116" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#05e1ed"/><stop offset=".55" stop-color="#0879ff"/><stop offset="1" stop-color="#6638ff"/></linearGradient>
+    <linearGradient id="gold" x1="82" y1="50" x2="148" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#ffec00"/><stop offset=".55" stop-color="#ff9200"/><stop offset="1" stop-color="#ff4f26"/></linearGradient>
+    <linearGradient id="flame" x1="122" y1="49" x2="112" y2="81" gradientUnits="userSpaceOnUse"><stop stop-color="#fff36a"/><stop offset="1" stop-color="#ff7900"/></linearGradient>
+    <linearGradient id="word" x1="340" y1="0" x2="740" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#05d3ed"/><stop offset="1" stop-color="#1763ff"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#005dff" stop-opacity=".65"/><stop offset="1" stop-color="#005dff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="64" fill="url(#back)"/>
+  <ellipse cx="512" cy="864" rx="400" ry="86" fill="url(#glow)"/>
+  <g transform="translate(344 110) scale(2.05)">
+    <path d="M106 40H68c-22 0-34 10-34 25s12 22 32 25l18 2c19 2 27 11 27 23 0 15-13 25-34 25H45" fill="none" stroke="url(#blue)" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"/>
+    <path d="M105 38v75h38" fill="none" stroke="url(#gold)" stroke-linecap="square" stroke-width="22"/>
+    <path d="M16 132c39-1 88-30 113-62" fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-width="8"/>
+    <path d="m124 71 8-13 4 11-8 10Z" fill="#ffb000"/>
+    <g transform="rotate(42 143 39)">
+      <path d="M143 7c-13 12-18 27-18 44l18 15 18-15c0-17-5-32-18-44Z" fill="#f8fbff" stroke="#102044" stroke-width="3"/>
+      <circle cx="143" cy="33" r="9" fill="#101b3c"/><circle cx="143" cy="33" r="5.5" fill="#08bafa"/>
+      <path d="m126 43-12 13 13 1 5-9m23-5 12 13-13 1-5-9" fill="#087eff"/>
+      <path d="M137 64h12l-6 17Z" fill="url(#flame)"/>
+    </g>
+    <path d="M43 119 35 130l17-6m92-108v8m-4-4h8" fill="none" stroke="#09c8ef" stroke-linecap="round" stroke-width="3"/>
+  </g>
+  <text x="512" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="79" font-weight="800" letter-spacing="-4"><tspan fill="#f7fbff">Skill</tspan><tspan fill="url(#word)">Launch</tspan><tspan fill="#f7fbff">Pad</tspan></text>
+  <path d="M125 758h85m604 0h85" stroke="url(#blue)" stroke-width="6" stroke-linecap="round"/>
+  <text x="512" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="11" fill="#f3f6ff">LEARN<tspan fill="#05d3ed">  •  </tspan>BUILD<tspan fill="#af4fff">  •  </tspan>GROW</text>
+</svg>

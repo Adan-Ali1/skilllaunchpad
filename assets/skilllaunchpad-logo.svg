@@ -1,22 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 76" role="img" aria-labelledby="title">
-  <title id="title">SkillLaunchpad — Learn. Build. Launch.</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" role="img" aria-labelledby="title">
+  <title id="title">SkillLaunchPad</title>
   <defs>
-    <linearGradient id="bg" x1="8" y1="4" x2="57" y2="60" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#163b46"/><stop offset="1" stop-color="#168c70"/>
-    </linearGradient>
-    <linearGradient id="page" x1="14" y1="34" x2="51" y2="54" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff"/><stop offset="1" stop-color="#dff5e8"/>
-    </linearGradient>
+    <linearGradient id="blue" x1="35" y1="35" x2="116" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#09d6ef"/><stop offset=".55" stop-color="#0879ff"/><stop offset="1" stop-color="#313be7"/></linearGradient>
+    <linearGradient id="gold" x1="82" y1="50" x2="148" y2="128" gradientUnits="userSpaceOnUse"><stop stop-color="#ffe000"/><stop offset=".55" stop-color="#ff9200"/><stop offset="1" stop-color="#ff4f26"/></linearGradient>
+    <linearGradient id="flame" x1="122" y1="49" x2="112" y2="81" gradientUnits="userSpaceOnUse"><stop stop-color="#fff36a"/><stop offset="1" stop-color="#ff7900"/></linearGradient>
+    <linearGradient id="word" x1="330" y1="55" x2="530" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#04cde9"/><stop offset="1" stop-color="#1763f5"/></linearGradient>
   </defs>
-  <g transform="translate(5 6)">
-    <rect x="1" y="1" width="62" height="62" rx="19" fill="url(#bg)"/>
-    <path d="M12 36c7-3.7 13.8-3.2 20 1.4v15c-5.9-4-12.6-4.3-20-1V36Z" fill="url(#page)"/>
-    <path d="M52 36c-7-3.7-13.8-3.2-20 1.4v15c5.9-4 12.6-4.3 20-1V36Z" fill="url(#page)"/>
-    <path d="M32 38v14" fill="none" stroke="#b7e8cf" stroke-width="2"/>
-    <path d="m20 38 23-22m-9 0h9v9" fill="none" stroke="#d0f27b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"/>
-    <path d="M49 11v6m-3-3h6" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" opacity=".9"/>
+  <g transform="translate(4 5)">
+    <path d="M106 40H68c-22 0-34 10-34 25s12 22 32 25l18 2c19 2 27 11 27 23 0 15-13 25-34 25H45" fill="none" stroke="url(#blue)" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"/>
+    <path d="M105 38v75h38" fill="none" stroke="url(#gold)" stroke-linecap="square" stroke-width="22"/>
+    <path d="M16 132c39-1 88-30 113-62" fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-width="8"/>
+    <path d="m124 71 8-13 4 11-8 10Z" fill="#ffb000"/>
+    <g transform="rotate(42 143 39)">
+      <path d="M143 7c-13 12-18 27-18 44l18 15 18-15c0-17-5-32-18-44Z" fill="#f8fbff" stroke="#102044" stroke-width="3"/>
+      <circle cx="143" cy="33" r="9" fill="#101b3c"/><circle cx="143" cy="33" r="5.5" fill="#08bafa"/>
+      <path d="m126 43-12 13 13 1 5-9m23-5 12 13-13 1-5-9" fill="#087eff"/>
+      <path d="M137 64h12l-6 17Z" fill="url(#flame)"/>
+    </g>
+    <path d="M43 119 35 130l17-6m92-108v8m-4-4h8" fill="none" stroke="#09c8ef" stroke-linecap="round" stroke-width="3"/>
   </g>
-  <text x="82" y="40" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#18343b">skill</text>
-  <text x="135" y="40" font-family="Arial,sans-serif" font-size="27" font-weight="500" fill="#71877d">launchpad</text>
-  <text x="83" y="59" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2.2" fill="#168c70">LEARN · BUILD · LAUNCH</text>
+  <text x="190" y="105" font-family="Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-3"><tspan fill="#091633">Skill</tspan><tspan fill="url(#word)">Launch</tspan><tspan fill="#091633">Pad</tspan></text>
 </svg>
