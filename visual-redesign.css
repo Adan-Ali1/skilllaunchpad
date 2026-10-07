@@ -705,3 +705,96 @@ body[data-theme=dark] .floating-skill strong{color:#eff2ff}
   .floating-skill-data{bottom:10px;left:10px}
   .hero-note{right:12px;bottom:8px}
 }
+
+
+/* SkillLaunchpad photo-led homepage and shared purple/blue surfaces. */
+.hero .art.journey-preview{display:block;position:relative;padding:0;overflow:hidden;border:1px solid rgba(99,91,255,.16);border-radius:32px;background:#eeeaff;box-shadow:var(--sl-shadow)}
+.hero .learner-hero-photo{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.hero .floating-skill-web{top:16px;right:16px}
+.hero .floating-skill-design{top:45%;right:16px}
+.hero .floating-skill-data{bottom:16px;left:16px}
+.hero .hero-note{right:18px;bottom:14px}
+.start-card{border-color:#e1ddff;background:linear-gradient(120deg,#f1efff,#f5f7ff 58%,#f5fbff);box-shadow:0 16px 42px rgba(35,38,85,.07)}
+.start-copy h2,.today-card h2{color:var(--sl-navy)}
+.start-copy p,.today-card p,.start-copy>small{color:#667085}
+.start-preview>div{border-color:#e5e5f2;background:#fff}
+.start-preview>div:hover{border-color:#b9b2ff;box-shadow:0 10px 24px rgba(99,91,255,.1)}
+.start-preview small,.path-step>small,.make-card>small,.tool-category-grid small{color:var(--sl-purple)}
+.start-preview b{color:var(--sl-navy)}
+.path-step{border-color:var(--sl-line);background:var(--sl-card)}
+.path-step:hover{border-color:#b9b2ff;box-shadow:0 14px 28px rgba(99,91,255,.1)}
+.path-number{color:#737d93}
+.path-icon{background:var(--sl-soft);color:var(--sl-purple)}
+.path-step>b{color:var(--sl-navy)}
+.path-step>span:not(.path-number):not(.path-icon){color:#667085}
+.path-step>strong,.path-step>strong i{color:var(--sl-purple)}
+.path-step:not(:last-child):after{border-color:#c9c4ff}
+.skill-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.skill-grid a{min-width:0;min-height:195px;border:1px solid var(--sl-line);border-radius:17px;background:linear-gradient(145deg,#f4f2ff,#fff)}
+.skill-grid a:hover{border-color:#b9b2ff;box-shadow:0 14px 28px rgba(99,91,255,.1)}
+.skill-grid a small{color:var(--sl-purple)}
+.skill-grid a b{color:var(--sl-navy);font-size:14px}
+.skill-grid a span{color:#667085}
+.skill-grid a strong{color:var(--sl-purple)}
+.skill-icon{background:linear-gradient(135deg,var(--sl-purple),var(--sl-blue));color:#fff}
+.make-section .text-link{color:var(--sl-purple);border-color:#c9c4ff}
+.make-card{border-color:var(--sl-line);background:var(--sl-card)}
+.make-card:hover{border-color:#b9b2ff;box-shadow:0 14px 28px rgba(99,91,255,.1)}
+.make-card>b{color:var(--sl-navy)}
+.make-card>span i{color:#5c5b84;background:var(--sl-soft)}
+.make-card>strong{color:var(--sl-purple)}
+.first-project{background:radial-gradient(circle at 100% 0,rgba(99,91,255,.5),transparent 32%),linear-gradient(125deg,#111936,#171c45 65%,#2837a0);box-shadow:0 20px 48px rgba(24,29,79,.2)}
+.brief-label small,.brief-main .eyebrow,.brief-facts small{color:#c6c1ff}
+.brief-label span{border-color:rgba(255,255,255,.35)}
+.brief-main h2 em{color:#a99dff}
+.brief-main .btn{background:linear-gradient(135deg,var(--sl-purple),var(--sl-blue));color:#fff}
+.brief-facts{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.16)}
+.brief-facts>div{background:rgba(13,20,54,.35)}
+.challenge-preview{border-color:var(--sl-line);background:var(--sl-card)}
+.challenge-top small,.challenge-days b{color:var(--sl-purple)}
+.challenge-top b{color:var(--sl-navy)}
+.challenge-days span{background:#f4f2ff;color:#59627a}
+.challenge-days .today{background:#eae7ff;border-color:#c8c1ff}
+.mini-progress i{background:linear-gradient(90deg,var(--sl-purple),var(--sl-blue))}
+.today-card{border-color:#e1ddff;background:linear-gradient(120deg,#f2efff,#f4f7ff)}
+.today-checklist span{border-color:#e7e7f0;background:#fff;color:#566078}
+.tool-category-grid>a{border-color:var(--sl-line);background:var(--sl-card)}
+.tool-category-grid>a:hover{border-color:#b9b2ff;box-shadow:0 14px 27px rgba(99,91,255,.09)}
+.tool-category-grid b{color:var(--sl-navy)}
+.tool-category-grid span{color:#667085}
+.tool-category-grid i{color:var(--sl-purple)}
+.close-secondary{border-color:#a8a2ff;color:#f1efff}
+.foot .footer-tagline{color:#737d93}
+.foot>div>b{color:var(--sl-navy)}
+.foot>div>a:hover{color:var(--sl-purple)}
+#guides .card .visual{position:relative;display:block;background-position:center;background-size:cover}
+#guides .card .visual>span{display:none}
+#guides .card .visual>small{position:absolute;top:12px;left:12px;margin:0;padding:7px 9px;border:1px solid rgba(255,255,255,.65);border-radius:99px;background:rgba(255,255,255,.9);color:var(--sl-navy);font-size:8px;letter-spacing:.6px;box-shadow:0 4px 15px rgba(20,25,54,.1)}
+#guides .card:nth-of-type(1) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-photo.png')}
+#guides .card:nth-of-type(2) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-portfolio-photo.png')}
+#guides .card:nth-of-type(3) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-design-photo.png')}
+#guides .card:nth-of-type(4) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-collaboration-photo.png')}
+#guides .card:nth-of-type(5) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-photo.png')}
+#guides .card:nth-of-type(6) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-portfolio-photo.png')}
+#guides .card:nth-of-type(7) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-design-photo.png')}
+#guides .card:nth-of-type(8) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-collaboration-photo.png')}
+#guides .card:nth-of-type(9) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-photo.png')}
+body[data-theme=dark] .start-card,body[data-theme=dark] .today-card{background:linear-gradient(120deg,#1b2044,#18243d);border-color:#34385e}
+body[data-theme=dark] .start-copy h2,body[data-theme=dark] .today-card h2,body[data-theme=dark] .start-preview b,body[data-theme=dark] .path-step>b,body[data-theme=dark] .skill-grid a b,body[data-theme=dark] .make-card>b,body[data-theme=dark] .challenge-top b,body[data-theme=dark] .tool-category-grid b{color:#eff1ff}
+body[data-theme=dark] .start-copy p,body[data-theme=dark] .start-copy>small,body[data-theme=dark] .today-card p,body[data-theme=dark] .path-step>span:not(.path-number):not(.path-icon),body[data-theme=dark] .skill-grid a span,body[data-theme=dark] .make-card>span i,body[data-theme=dark] .tool-category-grid span{color:#bac4dc}
+body[data-theme=dark] .start-preview>div,body[data-theme=dark] .path-step,body[data-theme=dark] .skill-grid a,body[data-theme=dark] .make-card,body[data-theme=dark] .challenge-preview,body[data-theme=dark] .tool-category-grid>a,body[data-theme=dark] .today-checklist span{background:#17213d;border-color:#34405f}
+body[data-theme=dark] .start-preview small,body[data-theme=dark] .path-step>small,body[data-theme=dark] .make-card>small,body[data-theme=dark] .tool-category-grid small{color:#aaa3ff}
+body[data-theme=dark] .today-checklist span{color:#c5cce0}
+body[data-theme=dark] .challenge-days span{background:#202746;color:#d0d5e8}
+body[data-theme=dark] .challenge-days .today{background:#2b2a5b;border-color:#5249a5}
+body[data-theme=dark] .hero .art.journey-preview{background-color:#1c2550}
+@media(max-width:1050px){.skill-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){
+  .hero .art.journey-preview{height:400px;min-height:400px;border-radius:25px}
+  .hero .learner-hero-photo{object-position:center}
+  .hero .floating-skill-design{right:10px}
+  .skill-grid{grid-template-columns:1fr 1fr;gap:9px}
+  .skill-grid a{min-height:180px;padding:13px}
+  .skill-grid a b{font-size:13px}
+}
