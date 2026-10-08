@@ -835,3 +835,20 @@ body[data-theme=dark] .hero .art.journey-preview{background-color:#1c2550}
 .journey-steps-grid b{margin-top:2px}
 .journey-steps-grid span{flex:1}
 @media(max-width:560px){.journey-steps-grid a{min-height:0}}
+
+.roadmap-filters{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(190px,.7fr);gap:14px;margin:20px 0 24px}
+.roadmap-filters label{display:grid;gap:7px;margin:0;color:var(--sl-navy);font-size:13px;font-weight:700}
+.roadmap-filters input,.roadmap-filters select{width:100%;padding:12px 14px;border:1px solid var(--sl-line);border-radius:12px;background:var(--sl-card);color:var(--sl-navy);font:inherit}
+.roadmap-overview-grid{align-items:stretch}
+.roadmap-list-card{display:flex;flex-direction:column;gap:10px;min-width:0}
+.roadmap-card-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
+.roadmap-list-card h2{margin:0}
+.roadmap-list-card p{margin:0}
+.roadmap-preview{display:grid;gap:6px;padding:0;margin:0;list-style:none;color:#65728a;font-size:12px;line-height:1.5}
+.roadmap-preview li{display:flex;gap:9px;align-items:baseline}
+.roadmap-preview li span{flex:none;color:var(--sl-purple);font-size:10px;font-weight:800}
+.roadmap-list-card .roadmap-list-track{margin-top:2px}
+.roadmap-list-card>.platform-btn{align-self:flex-start;margin-top:auto}
+body[data-theme=dark] .roadmap-filters label,body[data-theme=dark] .roadmap-preview{color:#c3cce0}
+body[data-theme=dark] .roadmap-filters input,body[data-theme=dark] .roadmap-filters select{background:#18203d;border-color:#37415e;color:#eff1ff}
+@media(max-width:700px){.roadmap-filters{grid-template-columns:1fr}}
