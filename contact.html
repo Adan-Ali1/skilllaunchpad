@@ -51,6 +51,7 @@
 <script>
 const feedbackForm=document.getElementById('feedback-form');
 const feedbackStatus=document.getElementById('feedback-status');
+let feedbackCooldownTimer=null;
 feedbackForm.addEventListener('submit',async event=>{
   event.preventDefault();
   if(!feedbackForm.reportValidity())return;
@@ -58,11 +59,17 @@ feedbackForm.addEventListener('submit',async event=>{
   button.disabled=true;feedbackStatus.dataset.kind='';feedbackStatus.textContent='Sending your feedback…';
   try{
     const response=await fetch(feedbackForm.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(feedbackForm)))});
-    const result=await response.json();
-    if(!response.ok||!result.success)throw new Error(result.error||'Please try again later.');
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok||!result.success){const failure=new Error(result.error||'Please try again later.');if(response.status===429)failure.retryAfter=Number(response.headers.get('Retry-After')||result.retryAfter)||60;throw failure;}
     feedbackForm.reset();feedbackStatus.dataset.kind='success';feedbackStatus.textContent='Thanks—your feedback was sent to SkillLaunchpad.';
-  }catch(error){feedbackStatus.dataset.kind='error';feedbackStatus.textContent=error.message||'We could not send your feedback. Please try again later.';}
-  finally{button.disabled=false;}
+  }catch(error){
+    feedbackStatus.dataset.kind='error';feedbackStatus.textContent=error.message||'We could not send your feedback. Please try again later.';
+    if(error.retryAfter){
+      let remaining=Math.min(3600,Math.max(1,error.retryAfter));const label=button.textContent;
+      button.disabled=true;button.textContent=`Try again in ${remaining}s`;
+      feedbackCooldownTimer=setInterval(()=>{remaining-=1;if(remaining<=0){clearInterval(feedbackCooldownTimer);feedbackCooldownTimer=null;button.disabled=false;button.textContent=label;return;}button.textContent=`Try again in ${remaining}s`;},1000);
+    }
+  }finally{if(!feedbackCooldownTimer)button.disabled=false;}
 });
 </script>
 <script src="/platform.js"></script></body></html>

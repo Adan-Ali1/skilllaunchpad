@@ -770,15 +770,15 @@ body[data-theme=dark] .floating-skill strong{color:#eff2ff}
 #guides .card .visual{position:relative;display:block;background-position:center;background-size:cover}
 #guides .card .visual>span{display:none}
 #guides .card .visual>small{position:absolute;top:12px;left:12px;margin:0;padding:7px 9px;border:1px solid rgba(255,255,255,.65);border-radius:99px;background:rgba(255,255,255,.9);color:var(--sl-navy);font-size:8px;letter-spacing:.6px;box-shadow:0 4px 15px rgba(20,25,54,.1)}
-#guides .card:nth-of-type(1) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-qwen.png')}
-#guides .card:nth-of-type(2) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-portfolio-qwen.png')}
-#guides .card:nth-of-type(3) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-design-qwen.png')}
-#guides .card:nth-of-type(4) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-collaboration-qwen.png')}
-#guides .card:nth-of-type(5) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-qwen.png')}
-#guides .card:nth-of-type(6) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-portfolio-qwen.png')}
-#guides .card:nth-of-type(7) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-design-qwen.png')}
-#guides .card:nth-of-type(8) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-collaboration-qwen.png')}
-#guides .card:nth-of-type(9) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-qwen.png')}
+#guides .card:nth-of-type(1) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-qwen.webp')}
+#guides .card:nth-of-type(2) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-portfolio-qwen.webp')}
+#guides .card:nth-of-type(3) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-design-qwen.webp')}
+#guides .card:nth-of-type(4) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-collaboration-qwen.webp')}
+#guides .card:nth-of-type(5) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-qwen.webp')}
+#guides .card:nth-of-type(6) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-portfolio-qwen.webp')}
+#guides .card:nth-of-type(7) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-design-qwen.webp')}
+#guides .card:nth-of-type(8) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-collaboration-qwen.webp')}
+#guides .card:nth-of-type(9) .visual{background-image:linear-gradient(0deg,rgba(17,25,54,.14),transparent 55%),url('/assets/guide-skill-qwen.webp')}
 body[data-theme=dark] .start-card,body[data-theme=dark] .today-card{background:linear-gradient(120deg,#1b2044,#18243d);border-color:#34385e}
 body[data-theme=dark] .start-copy h2,body[data-theme=dark] .today-card h2,body[data-theme=dark] .start-preview b,body[data-theme=dark] .path-step>b,body[data-theme=dark] .skill-grid a b,body[data-theme=dark] .make-card>b,body[data-theme=dark] .challenge-top b,body[data-theme=dark] .tool-category-grid b{color:#eff1ff}
 body[data-theme=dark] .start-copy p,body[data-theme=dark] .start-copy>small,body[data-theme=dark] .today-card p,body[data-theme=dark] .path-step>span:not(.path-number):not(.path-icon),body[data-theme=dark] .skill-grid a span,body[data-theme=dark] .make-card>span i,body[data-theme=dark] .tool-category-grid span{color:#bac4dc}

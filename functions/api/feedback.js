@@ -62,6 +62,21 @@ export async function onRequestPost({ request, env }) {
     if (!response.ok || !result || result.success === false || result.success === "false") {
       const detail = safeDiagnostic(result?.message || result?.success, env.FEEDBACK_TO);
       console.error("Feedback provider rejected submission", response.status, detail);
+      if (response.status === 429) {
+        const retryAfter = response.headers.get("Retry-After");
+        const retryDate = retryAfter && !/^\d+$/.test(retryAfter) ? Date.parse(retryAfter) : NaN;
+        const retrySeconds = retryAfter && /^\d+$/.test(retryAfter)
+          ? Number(retryAfter)
+          : Number.isFinite(retryDate) ? Math.ceil((retryDate - Date.now()) / 1000) : 60;
+        const seconds = String(Math.min(3600, Math.max(1, retrySeconds)));
+        return new Response(JSON.stringify({
+          error: `The email service is temporarily busy. Please wait about ${seconds} seconds, then try again. Your message is still in the form.`,
+          retryAfter: Number(seconds)
+        }), {
+          status: 429,
+          headers: { ...jsonHeaders, "Retry-After": seconds }
+        });
+      }
       return reply({ error: `Email provider rejected the request (${response.status}): ${detail}` }, 502);
     }
     return reply({ success: true });
