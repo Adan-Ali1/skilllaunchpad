@@ -47,12 +47,12 @@
   panel.className = "sl-consent";
   panel.setAttribute("aria-label", "Analytics privacy choices");
   panel.setAttribute("aria-live", "polite");
-  panel.innerHTML = '<div class="sl-consent-copy"><strong>Help us improve SkillLaunchpad</strong><p>Optional Google Analytics measures visits and page interactions. It starts only when you choose Accept. <a href="/privacy.html">Privacy details</a></p></div><div class="sl-consent-actions"><button type="button" data-sl-reject>Reject analytics</button><button type="button" data-sl-accept>Accept analytics</button></div>';
+  panel.innerHTML = '<div class="sl-consent-copy"><strong>Help us improve SkillLaunchpad</strong><p>Optional Google Analytics measures visits and page interactions. It starts only when you choose Accept. These controls apply to analytics only; ads are not currently displayed. If ads are added, a separate advertising consent message will be configured before ads are served where required. <a href="/privacy.html">Privacy details</a></p></div><div class="sl-consent-actions"><button type="button" data-sl-reject>Reject analytics</button><button type="button" data-sl-accept>Accept analytics</button></div>';
   const trigger = document.createElement("button");
   trigger.className = "sl-consent-trigger";
   trigger.type = "button";
-  trigger.textContent = "Privacy choices";
-  trigger.setAttribute("aria-label", "Change analytics privacy choices");
+  trigger.textContent = "Analytics choices";
+  trigger.setAttribute("aria-label", "Change analytics choices");
   document.body.append(panel, trigger);
 
   function storeChoice(value) {
