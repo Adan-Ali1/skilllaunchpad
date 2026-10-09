@@ -875,3 +875,12 @@ body[data-theme="dark"] .hero .actions .link:hover{color:#fff}
   .hero h1{font-size:clamp(42px,11vw,48px);letter-spacing:-2.8px}
   .hero .art.journey-preview{height:360px;min-height:360px}
 }
+
+/* Place the pale hero backdrop behind the artwork, never behind the copy. */
+.hero:before{left:calc(50% + 20px);right:0}
+@media(max-width:900px){
+  .hero:before{top:auto;right:0;bottom:35px;left:0;height:420px}
+}
+@media(max-width:560px){
+  .hero:before{height:360px;bottom:35px}
+}
