@@ -852,3 +852,26 @@ body[data-theme=dark] .hero .art.journey-preview{background-color:#1c2550}
 body[data-theme=dark] .roadmap-filters label,body[data-theme=dark] .roadmap-preview{color:#c3cce0}
 body[data-theme=dark] .roadmap-filters input,body[data-theme=dark] .roadmap-filters select{background:#18203d;border-color:#37415e;color:#eff1ff}
 @media(max-width:700px){.roadmap-filters{grid-template-columns:1fr}}
+
+/* Keep the homepage hero contained at every viewport width. */
+.hero:before{right:0}
+.hero{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(24px,3.2vw,40px)}
+.hero>div:first-child{min-width:0;max-width:100%;z-index:1}
+.hero h1{max-width:100%;font-size:clamp(48px,5.4vw,68px);letter-spacing:clamp(-4px,-.3vw,-2.5px)}
+.hero .art{min-width:0;max-width:100%}
+body[data-theme="dark"] .hero .actions .link{color:#c3c9df}
+body[data-theme="dark"] .hero .actions .link:hover{color:#fff}
+@media(max-width:1050px){
+  .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,2.4vw,26px)}
+  .hero h1{font-size:clamp(44px,5.25vw,58px);letter-spacing:-3px}
+}
+@media(max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:30px}
+  .hero>div:first-child{max-width:720px}
+  .hero h1{font-size:clamp(48px,9vw,66px);letter-spacing:-3px}
+  .hero .art{width:100%;max-width:100%;height:420px}
+}
+@media(max-width:560px){
+  .hero h1{font-size:clamp(42px,11vw,48px);letter-spacing:-2.8px}
+  .hero .art.journey-preview{height:360px;min-height:360px}
+}
